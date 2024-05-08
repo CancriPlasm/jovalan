@@ -401,7 +401,7 @@ a:active {
   border-style: var(--cd-card-border-style) !important;
   border-color: var(--cd-card-border-color) !important;
   border-radius: var(--cd-border-radius) !important;
-  max-height: 150px !important;
+  min-height: 150px !important;
 }
 
 .card-header {
