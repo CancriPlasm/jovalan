@@ -643,7 +643,3 @@ p:last-child {
         font-size: 5rem;
     }
 }
-
-#design-gallery > div:nth-child(1) > div:nth-child(3) {
-  max-height: 200px !important;
-}
