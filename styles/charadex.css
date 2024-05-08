@@ -643,3 +643,7 @@ p:last-child {
         font-size: 5rem;
     }
 }
+
+#design-gallery {
+  max-height: 200px;
+}
