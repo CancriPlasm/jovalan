@@ -12,8 +12,8 @@ let sheetPages = {
 
     masterlist: "masterlist",
     masterlistLog: "masterlist log",
-    inventory: "inventory",
-    inventoryLog: "inventory log",
+    petsMasterlist: "pets masterlist",
+    petsLog: "pets log",
     items: "items",
     traits: "traits",
     prompts: "prompts",
@@ -78,18 +78,19 @@ let options = {
     },
 
 
-    /* Invetory
+    /* Pets Masterlist
     /* --------------------------------------------------------------- */
-    inventory: {
-
-        sheetPage: sheetPages.inventory,
-        itemSheetPage: sheetPages.items,
-        logSheetPage: sheetPages.inventoryLog,
-    
-        itemAmount: 24,
-        sortTypes: ['Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
+    petsMasterlist: {
         
-        searchFilterParams: ['Username'],
+        sheetPage: sheetPages.petsMasterlist,
+        logSheetPage: sheetPages.petsLog,
+
+        itemAmount: 12,
+        itemOrder: "desc",
+
+        filterColumn: 'Customisation',
+        searchFilterParams: ['ID', 'Owner', 'Designer', 'Artist'],
+        fauxFolderColumn: 'Species',
     
     },
 
