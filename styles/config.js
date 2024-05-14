@@ -16,7 +16,6 @@ let sheetPages = {
     petsLog: "pets log",
     items: "items",
     traits: "traits",
-    prompts: "prompts",
     faq: "faq",
     staff: "mods",
 
@@ -91,20 +90,6 @@ let options = {
         filterColumn: 'Customisation',
         searchFilterParams: ['ID', 'Owner', 'Designer', 'Artist'],
         fauxFolderColumn: 'Species',
-    
-    },
-
-
-    /* Prompts
-    /* --------------------------------------------------------------- */
-    prompts: {
-    
-        sheetPage: sheetPages.prompts,
-
-        itemAmount: 24,
-        itemOrder: "desc",
-
-        searchFilterParams: ['Title'],
     
     },
 
