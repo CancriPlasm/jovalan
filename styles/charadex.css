@@ -645,6 +645,5 @@ p:last-child {
 }
 
 .log-header:empty { 
-    grid-area: HEADER; 
     display: none;
 }
