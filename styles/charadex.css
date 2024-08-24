@@ -644,7 +644,7 @@ p:last-child {
     }
 }
 
-.LOG-HEADER:empty { 
+.log-header:empty { 
     grid-area: HEADER; 
     display: none;
 }
