@@ -643,7 +643,3 @@ p:last-child {
         font-size: 5rem;
     }
 }
-
-.log-header:empty { 
-    display: none;
-}
