@@ -643,7 +643,3 @@ p:last-child {
         font-size: 5rem;
     }
 }
-
-.ownership-log:has(.log-entry:empty) {
-  display: none;
-}
