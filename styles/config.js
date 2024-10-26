@@ -10,8 +10,8 @@ let sheetID = "1VyY57-VYntqhYeGbn8kQhVyX5CJi6KfhW8Fp6Ukj03M";
 /* ------------------------------------------------------------------- */
 let sheetPages = {
 
-    masterlist: "masterlist",
-    masterlistLog: "masterlist log",
+    mainMasterlist: "main masterlist",
+    mainMasterlistLog: "main masterlist log",
     petsMasterlist: "pets masterlist",
     sharedMasterlist: "shared masterlist",
     sharedMasterlistLog: "shared masterlist log",
@@ -38,24 +38,24 @@ let options = {
         staffSheetPage: sheetPages.staff,
         numOfStaff: 8,
 
-        masterlistSheetPage: sheetPages.masterlist,
-        numOfDesigns: 4,
+        mainMasterlistSheetPage: sheetPages.mainMasterlist,
+        numOfMainDesigns: 4,
 
         sharedMasterlistSheetPage: sheetPages.sharedMasterlist,
-        numOfDesigns: 4,
+        numOfSharedDesigns: 4,
 
         petsMasterlistSheetPage: sheetPages.petsMasterlist,
-        numOfDesigns: 4,
+        numOfPetDesigns: 4,
     
     },
 
 
     /* Main Masterlist
     /* --------------------------------------------------------------- */
-    masterlist: {
+    mainMasterlist: {
 
-        sheetPage: sheetPages.masterlist,
-        logSheetPage: sheetPages.masterlistLog,
+        sheetPage: sheetPages.mainMasterlist,
+        logSheetPage: sheetPages.mainMasterlistLog,
 
         itemAmount: 12,
         itemOrder: "desc",
