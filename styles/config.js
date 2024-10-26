@@ -13,8 +13,8 @@ let sheetPages = {
     masterlist: "masterlist",
     masterlistLog: "masterlist log",
     petsMasterlist: "pets masterlist",
-    sharedMasterlist: "shared masterlist"
-    sharedMasterlistLog: "shared masterlist log"
+    sharedMasterlist: "shared masterlist",
+    sharedMasterlistLog: "shared masterlist log",
     petsLog: "pets log",
     faq: "faq",
     staff: "mods",
