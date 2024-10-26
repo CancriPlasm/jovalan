@@ -43,11 +43,14 @@ let options = {
 
         sharedMasterlistSheetPage: sheetPages.sharedMasterlist,
         numOfDesigns: 4,
+
+        petsMasterlistSheetPage: sheetPages.petsMasterlist,
+        numOfDesigns: 4,
     
     },
 
 
-    /* Masterlist
+    /* Main Masterlist
     /* --------------------------------------------------------------- */
     masterlist: {
 
