@@ -13,9 +13,9 @@ let sheetPages = {
     masterlist: "masterlist",
     masterlistLog: "masterlist log",
     petsMasterlist: "pets masterlist",
+    sharedMasterlist: "shared masterlist"
+    sharedMasterlistLog: "shared masterlist log"
     petsLog: "pets log",
-    items: "items",
-    traits: "traits",
     faq: "faq",
     staff: "mods",
 
@@ -40,6 +40,9 @@ let options = {
 
         masterlistSheetPage: sheetPages.masterlist,
         numOfDesigns: 4,
+
+        sharedMasterlistSheetPage: sheetPages.sharedMasterlist,
+        numOfDesigns: 4,
     
     },
 
@@ -61,19 +64,20 @@ let options = {
     },
 
 
-    /* Item Catalogue
+    /* Shared Masterlist
     /* --------------------------------------------------------------- */
-    items: {
+    sharedMasterlist: {
 
-        sheetPage: sheetPages.items,
-    
-        itemAmount: 24,
-        itemOrder: "asc",
-    
-        filterColumn: 'Rarity',
-        searchFilterParams: ['Item'],
-        fauxFolderColumn: 'Type',
-    
+        sheetPage: sheetPages.sharedMasterlist,
+        logSheetPage: sheetPages.sharedMasterlistLog,
+
+        itemAmount: 12,
+        itemOrder: "desc",
+
+        filterColumn: 'Design Type',
+        searchFilterParams: ['ID', 'Owner', 'Designer', 'Artist'],
+        fauxFolderColumn: 'Species',
+
     },
 
 
@@ -90,22 +94,6 @@ let options = {
         filterColumn: 'Customisation',
         searchFilterParams: ['ID', 'Owner', 'Designer', 'Artist'],
         fauxFolderColumn: 'Species',
-    
-    },
-
-
-    /* Traits
-    /* --------------------------------------------------------------- */
-    traits: {
-    
-        sheetPage: sheetPages.traits,
-
-        itemAmount: 24,
-        itemOrder: "asc",
-
-        filterColumn: 'Rarity',
-        searchFilterParams: ['Trait'],
-        fauxFolderColumn: 'Type',
     
     },
 
