@@ -706,7 +706,7 @@ const frontPage = (options) => {
         }
     }; addStaff();
 
-    // Designs
+    // Main Masterlist
     let addDesigns = async () => {
         if ($("#design-gallery").length != 0) {
             if (charadexInfo.numOfDesigns != 0) {
@@ -732,6 +732,66 @@ const frontPage = (options) => {
 
             } else {
                 $("#design-gallery").hide();
+            }
+        }
+    }; addDesigns();
+
+// Shared Masterlist
+    let addDesigns = async () => {
+        if ($("#shared-design-gallery").length != 0) {
+            if (charadexInfo.numOfDesigns != 0) {
+
+                // Grab dah sheet
+                let designs = await fetchSheet(charadexInfo.sharedMasterlistSheetPage);
+
+                // Filter out any MYO slots, reverse and pull the first 4
+                let selectDesigns = designs.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadexInfo.numOfDesigns);
+
+                // Add cardlink
+                let cardKey = Object.keys(selectDesigns[0])[0];
+                for (var i in selectDesigns) { selectDesigns[i].cardlink = folderURL + "/sharedmasterlist.html?" + cardKey + "=" + selectDesigns[i][cardKey]; }
+
+                // Nyoom
+                let galleryOptions = {
+                    item: 'shared-design-item',
+                    valueNames: sheetArrayKeys(selectDesigns),
+                };
+
+                // Render Gallery
+                let charadex = new List('shared-design-gallery', galleryOptions, selectDesigns);
+
+            } else {
+                $("#shared-design-gallery").hide();
+            }
+        }
+    }; addDesigns();
+
+// Pets Masterlist
+    let addDesigns = async () => {
+        if ($("#pets-gallery").length != 0) {
+            if (charadexInfo.numOfDesigns != 0) {
+
+                // Grab dah sheet
+                let designs = await fetchSheet(charadexInfo.petsMasterlistSheetPage);
+
+                // Filter out any MYO slots, reverse and pull the first 4
+                let selectDesigns = designs.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadexInfo.numOfDesigns);
+
+                // Add cardlink
+                let cardKey = Object.keys(selectDesigns[0])[0];
+                for (var i in selectDesigns) { selectDesigns[i].cardlink = folderURL + "/petsmasterlist.html?" + cardKey + "=" + selectDesigns[i][cardKey]; }
+
+                // Nyoom
+                let galleryOptions = {
+                    item: 'pets-item',
+                    valueNames: sheetArrayKeys(selectDesigns),
+                };
+
+                // Render Gallery
+                let charadex = new List('pets-gallery', galleryOptions, selectDesigns);
+
+            } else {
+                $("#pets-gallery").hide();
             }
         }
     }; addDesigns();
