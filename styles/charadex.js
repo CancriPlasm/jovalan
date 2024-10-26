@@ -586,7 +586,7 @@ const frontPage = (options) => {
 
                 // Add cardlink
                 let cardKey = Object.keys(selectMainDesigns[0])[0];
-                for (var i in selectMainDesigns) { selectMainDesigns[i].cardlink = folderURL + "/masterlist.html?" + cardKey + "=" + selectMainDesigns[i][cardKey]; }
+                for (var i in selectMainDesigns) { selectMainDesigns[i].cardlink = folderURL + "/mainmasterlist.html?" + cardKey + "=" + selectMainDesigns[i][cardKey]; }
 
                 // Nyoom
                 let galleryOptions = {
