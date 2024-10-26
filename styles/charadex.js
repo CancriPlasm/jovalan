@@ -575,7 +575,7 @@ const frontPage = (options) => {
 
     // Main Masterlist
     let addDesigns = async () => {
-        if ($("#design-gallery").length != 0) {
+        if ($("#main-design-gallery").length != 0) {
             if (charadexInfo.numOfDesigns != 0) {
 
                 // Grab dah sheet
@@ -590,15 +590,15 @@ const frontPage = (options) => {
 
                 // Nyoom
                 let galleryOptions = {
-                    item: 'design-item',
+                    item: 'main-design-item',
                     valueNames: sheetArrayKeys(selectDesigns),
                 };
 
                 // Render Gallery
-                let charadex = new List('design-gallery', galleryOptions, selectDesigns);
+                let charadex = new List('main-design-gallery', galleryOptions, selectDesigns);
 
             } else {
-                $("#design-gallery").hide();
+                $("#main-design-gallery").hide();
             }
         }
     }; addDesigns();
