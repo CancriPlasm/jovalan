@@ -609,7 +609,7 @@ const frontPage = (options) => {
             if (charadexInfo.numOfSharedDesigns != 0) {
 
                 // Grab dah sheet
-                let designs = await fetchSheet(charadexInfo.sharedMasterlistSheetPage);
+                let shareddesigns = await fetchSheet(charadexInfo.sharedMasterlistSheetPage);
 
                 // Filter out any MYO slots, reverse and pull the first 4
                 let selectSharedDesigns = shareddesigns.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadexInfo.numOfSharedDesigns);
