@@ -13,8 +13,6 @@ let sheetPages = {
     mainMasterlist: "main masterlist",
     mainMasterlistLog: "main masterlist log",
     petsMasterlist: "pets masterlist",
-    sharedMasterlist: "shared masterlist",
-    sharedMasterlistLog: "shared masterlist log",
     petsLog: "pets log",
     faq: "faq",
     staff: "mods",
@@ -39,10 +37,7 @@ let options = {
         numOfStaff: 8,
 
         mainMasterlistSheetPage: sheetPages.mainMasterlist,
-        numOfMainDesigns: 4,
-
-        sharedMasterlistSheetPage: sheetPages.sharedMasterlist,
-        numOfSharedDesigns: 4,
+        numOfMainDesigns: 8,
 
         petsMasterlistSheetPage: sheetPages.petsMasterlist,
         numOfPetDesigns: 4,
@@ -56,23 +51,6 @@ let options = {
 
         sheetPage: sheetPages.mainMasterlist,
         logSheetPage: sheetPages.mainMasterlistLog,
-
-        itemAmount: 12,
-        itemOrder: "desc",
-
-        filterColumn: 'Design Type',
-        searchFilterParams: ['ID', 'Owner', 'Designer', 'Artist'],
-        fauxFolderColumn: 'Species',
-
-    },
-
-
-    /* Shared Masterlist
-    /* --------------------------------------------------------------- */
-    sharedMasterlist: {
-
-        sheetPage: sheetPages.sharedMasterlist,
-        logSheetPage: sheetPages.sharedMasterlistLog,
 
         itemAmount: 12,
         itemOrder: "desc",
