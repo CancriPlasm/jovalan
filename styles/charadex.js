@@ -603,36 +603,6 @@ const frontPage = (options) => {
         }
     }; addMainDesigns();
 
-// Shared Masterlist
-    let addSharedDesigns = async () => {
-        if ($("#shared-design-gallery").length != 0) {
-            if (charadexInfo.numOfSharedDesigns != 0) {
-
-                // Grab dah sheet
-                let shareddesigns = await fetchSheet(charadexInfo.sharedMasterlistSheetPage);
-
-                // Filter out any MYO slots, reverse and pull the first 4
-                let selectSharedDesigns = shareddesigns.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadexInfo.numOfSharedDesigns);
-
-                // Add cardlink
-                let cardKey = Object.keys(selectSharedDesigns[0])[0];
-                for (var i in selectSharedDesigns) { selectSharedDesigns[i].cardlink = folderURL + "/sharedmasterlist.html?" + cardKey + "=" + selectSharedDesigns[i][cardKey]; }
-
-                // Nyoom
-                let galleryOptions = {
-                    item: 'shared-design-item',
-                    valueNames: sheetArrayKeys(selectSharedDesigns),
-                };
-
-                // Render Gallery
-                let charadex = new List('shared-design-gallery', galleryOptions, selectSharedDesigns);
-
-            } else {
-                $("#shared-design-gallery").hide();
-            }
-        }
-    }; addSharedDesigns();
-
 // Pets Masterlist
     let addPetDesigns = async () => {
         if ($("#pets-gallery").length != 0) {
